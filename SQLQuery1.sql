@@ -1,0 +1,1 @@
+﻿select uyesu,tcsu, sum(sutoplam) as sutoplam from SuTbl group by uyesu,tcsu

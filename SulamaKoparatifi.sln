@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1321
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SulamaKoparatifi", "SulamaKoparatifi\SulamaKoparatifi.csproj", "{AB794F32-B5C9-4D6A-810C-6AF2CBB68324}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SulamaSetupp", "SulamaSetupp\SulamaSetupp.vdproj", "{3E5B2872-96C8-4CFC-B0B0-B20522E5F70D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AB794F32-B5C9-4D6A-810C-6AF2CBB68324}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB794F32-B5C9-4D6A-810C-6AF2CBB68324}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB794F32-B5C9-4D6A-810C-6AF2CBB68324}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB794F32-B5C9-4D6A-810C-6AF2CBB68324}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E5B2872-96C8-4CFC-B0B0-B20522E5F70D}.Debug|Any CPU.ActiveCfg = Debug
+		{3E5B2872-96C8-4CFC-B0B0-B20522E5F70D}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F65BFF4D-D606-4770-9A78-3018AD8854CC}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,361 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="SULAMADBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'C:\USERS\GOKCE\DESKTOP\SULAMAKOPARATIFI\SULAMAKOPARATIFI\SULAMADB.MDF.dbo.GorTbl' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="GorTbl">
+          <Key>
+            <PropertyRef Name="gornu" />
+            <PropertyRef Name="gorad" />
+          </Key>
+          <Property Name="gornu" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="gorad" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'C:\USERS\GOKCE\DESKTOP\SULAMAKOPARATIFI\SULAMAKOPARATIFI\SULAMADB.MDF.dbo.OdeTbl' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="OdeTbl">
+          <Key>
+            <PropertyRef Name="odeuye" />
+            <PropertyRef Name="odead" />
+            <PropertyRef Name="odetc" />
+            <PropertyRef Name="odetarih" />
+            <PropertyRef Name="odesez" />
+            <PropertyRef Name="odemak" />
+            <PropertyRef Name="odetutar" />
+            <PropertyRef Name="odemik" />
+            <PropertyRef Name="odekalan" />
+            <PropertyRef Name="odetur" />
+          </Key>
+          <Property Name="odeuye" Type="int" Nullable="false" />
+          <Property Name="odead" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="odetc" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="odetarih" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="odesez" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="odemak" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="odetutar" Type="money" Nullable="false" />
+          <Property Name="odemik" Type="money" Nullable="false" />
+          <Property Name="odekalan" Type="money" Nullable="false" />
+          <Property Name="odetur" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'C:\USERS\GOKCE\DESKTOP\SULAMAKOPARATIFI\SULAMAKOPARATIFI\SULAMADB.MDF.dbo.PompaTbl' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="PompaTbl">
+          <Key>
+            <PropertyRef Name="pompanu" />
+            <PropertyRef Name="pompais" />
+            <PropertyRef Name="pompauc" />
+          </Key>
+          <Property Name="pompanu" Type="int" Nullable="false" />
+          <Property Name="pompais" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="pompauc" Type="int" Nullable="false" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'C:\USERS\GOKCE\DESKTOP\SULAMAKOPARATIFI\SULAMAKOPARATIFI\SULAMADB.MDF.dbo.SuTbl' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="SuTbl">
+          <Key>
+            <PropertyRef Name="uyesu" />
+            <PropertyRef Name="tcsu" />
+            <PropertyRef Name="adsu" />
+            <PropertyRef Name="fisu" />
+            <PropertyRef Name="actarihsu" />
+            <PropertyRef Name="kapatarihsu" />
+            <PropertyRef Name="sumevki" />
+            <PropertyRef Name="susez" />
+            <PropertyRef Name="sugor" />
+            <PropertyRef Name="suucret" />
+            <PropertyRef Name="toplamsaat" />
+            <PropertyRef Name="sutoplam" />
+          </Key>
+          <Property Name="uyesu" Type="int" Nullable="false" />
+          <Property Name="tcsu" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="adsu" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="fisu" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="actarihsu" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="kapatarihsu" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="sumevki" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="susez" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="sugor" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="suucret" Type="money" Nullable="false" />
+          <Property Name="toplamsaat" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="sutoplam" Type="money" Nullable="false" />
+        </EntityType>
+        <EntityType Name="UyeTbl">
+          <Key>
+            <PropertyRef Name="idu" />
+          </Key>
+          <Property Name="idu" Type="int" Nullable="false" />
+          <Property Name="adu" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="babau" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="anneu" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="tcu" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="telu" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="teladres" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="aciku" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="sulau" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="ortu" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="opu" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="odeu" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="kalu" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="giru" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="karu" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="knu" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="dnu" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="SULAMADBModelStoreContainer">
+          <EntitySet Name="UyeTbl" EntityType="Self.UyeTbl" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="GorTbl" EntityType="Self.GorTbl" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [GorTbl].[gornu] AS [gornu], 
+    [GorTbl].[gorad] AS [gorad]
+    FROM [dbo].[GorTbl] AS [GorTbl]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="OdeTbl" EntityType="Self.OdeTbl" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [OdeTbl].[odeuye] AS [odeuye], 
+    [OdeTbl].[odead] AS [odead], 
+    [OdeTbl].[odetc] AS [odetc], 
+    [OdeTbl].[odetarih] AS [odetarih], 
+    [OdeTbl].[odesez] AS [odesez], 
+    [OdeTbl].[odemak] AS [odemak], 
+    [OdeTbl].[odetutar] AS [odetutar], 
+    [OdeTbl].[odemik] AS [odemik], 
+    [OdeTbl].[odekalan] AS [odekalan], 
+    [OdeTbl].[odetur] AS [odetur]
+    FROM [dbo].[OdeTbl] AS [OdeTbl]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="PompaTbl" EntityType="Self.PompaTbl" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [PompaTbl].[pompanu] AS [pompanu], 
+    [PompaTbl].[pompais] AS [pompais], 
+    [PompaTbl].[pompauc] AS [pompauc]
+    FROM [dbo].[PompaTbl] AS [PompaTbl]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="SuTbl" EntityType="Self.SuTbl" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [SuTbl].[uyesu] AS [uyesu], 
+    [SuTbl].[tcsu] AS [tcsu], 
+    [SuTbl].[adsu] AS [adsu], 
+    [SuTbl].[fisu] AS [fisu], 
+    [SuTbl].[actarihsu] AS [actarihsu], 
+    [SuTbl].[kapatarihsu] AS [kapatarihsu], 
+    [SuTbl].[sumevki] AS [sumevki], 
+    [SuTbl].[susez] AS [susez], 
+    [SuTbl].[sugor] AS [sugor], 
+    [SuTbl].[suucret] AS [suucret], 
+    [SuTbl].[toplamsaat] AS [toplamsaat], 
+    [SuTbl].[sutoplam] AS [sutoplam]
+    FROM [dbo].[SuTbl] AS [SuTbl]</DefiningQuery>
+          </EntitySet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="SULAMADBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="UyeTbl">
+          <Key>
+            <PropertyRef Name="idu" />
+          </Key>
+          <Property Name="idu" Type="Int32" Nullable="false" />
+          <Property Name="adu" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="babau" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="anneu" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="tcu" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="telu" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="teladres" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="aciku" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="sulau" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ortu" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="opu" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="odeu" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="kalu" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="giru" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="karu" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="knu" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="dnu" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityType Name="GorTbl">
+          <Key>
+            <PropertyRef Name="gornu" />
+            <PropertyRef Name="gorad" />
+          </Key>
+          <Property Name="gornu" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="gorad" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityType Name="OdeTbl">
+          <Key>
+            <PropertyRef Name="odeuye" />
+            <PropertyRef Name="odead" />
+            <PropertyRef Name="odetc" />
+            <PropertyRef Name="odetarih" />
+            <PropertyRef Name="odesez" />
+            <PropertyRef Name="odemak" />
+            <PropertyRef Name="odetutar" />
+            <PropertyRef Name="odemik" />
+            <PropertyRef Name="odekalan" />
+            <PropertyRef Name="odetur" />
+          </Key>
+          <Property Name="odeuye" Type="Int32" Nullable="false" />
+          <Property Name="odead" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="odetc" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="odetarih" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="odesez" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="odemak" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="odetutar" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+          <Property Name="odemik" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+          <Property Name="odekalan" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+          <Property Name="odetur" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityType Name="PompaTbl">
+          <Key>
+            <PropertyRef Name="pompanu" />
+            <PropertyRef Name="pompais" />
+            <PropertyRef Name="pompauc" />
+          </Key>
+          <Property Name="pompanu" Type="Int32" Nullable="false" />
+          <Property Name="pompais" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="pompauc" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="SuTbl">
+          <Key>
+            <PropertyRef Name="uyesu" />
+            <PropertyRef Name="tcsu" />
+            <PropertyRef Name="adsu" />
+            <PropertyRef Name="fisu" />
+            <PropertyRef Name="actarihsu" />
+            <PropertyRef Name="kapatarihsu" />
+            <PropertyRef Name="sumevki" />
+            <PropertyRef Name="susez" />
+            <PropertyRef Name="sugor" />
+            <PropertyRef Name="suucret" />
+            <PropertyRef Name="toplamsaat" />
+            <PropertyRef Name="sutoplam" />
+          </Key>
+          <Property Name="uyesu" Type="Int32" Nullable="false" />
+          <Property Name="tcsu" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="adsu" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="fisu" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="actarihsu" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="kapatarihsu" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="sumevki" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="susez" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="sugor" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="suucret" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+          <Property Name="toplamsaat" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="sutoplam" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="SULAMADBEntities1" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="UyeTbl" EntityType="Self.UyeTbl" />
+          <EntitySet Name="GorTbl" EntityType="Self.GorTbl" />
+          <EntitySet Name="OdeTbl" EntityType="Self.OdeTbl" />
+          <EntitySet Name="PompaTbl" EntityType="Self.PompaTbl" />
+          <EntitySet Name="SuTbl" EntityType="Self.SuTbl" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="SULAMADBModelStoreContainer" CdmEntityContainer="SULAMADBEntities1">
+          <EntitySetMapping Name="UyeTbl">
+            <EntityTypeMapping TypeName="SULAMADBModel.UyeTbl">
+              <MappingFragment StoreEntitySet="UyeTbl">
+                <ScalarProperty Name="idu" ColumnName="idu" />
+                <ScalarProperty Name="adu" ColumnName="adu" />
+                <ScalarProperty Name="babau" ColumnName="babau" />
+                <ScalarProperty Name="anneu" ColumnName="anneu" />
+                <ScalarProperty Name="tcu" ColumnName="tcu" />
+                <ScalarProperty Name="telu" ColumnName="telu" />
+                <ScalarProperty Name="teladres" ColumnName="teladres" />
+                <ScalarProperty Name="aciku" ColumnName="aciku" />
+                <ScalarProperty Name="sulau" ColumnName="sulau" />
+                <ScalarProperty Name="ortu" ColumnName="ortu" />
+                <ScalarProperty Name="opu" ColumnName="opu" />
+                <ScalarProperty Name="odeu" ColumnName="odeu" />
+                <ScalarProperty Name="kalu" ColumnName="kalu" />
+                <ScalarProperty Name="giru" ColumnName="giru" />
+                <ScalarProperty Name="karu" ColumnName="karu" />
+                <ScalarProperty Name="knu" ColumnName="knu" />
+                <ScalarProperty Name="dnu" ColumnName="dnu" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="GorTbl">
+            <EntityTypeMapping TypeName="SULAMADBModel.GorTbl">
+              <MappingFragment StoreEntitySet="GorTbl">
+                <ScalarProperty Name="gornu" ColumnName="gornu" />
+                <ScalarProperty Name="gorad" ColumnName="gorad" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="OdeTbl">
+            <EntityTypeMapping TypeName="SULAMADBModel.OdeTbl">
+              <MappingFragment StoreEntitySet="OdeTbl">
+                <ScalarProperty Name="odeuye" ColumnName="odeuye" />
+                <ScalarProperty Name="odead" ColumnName="odead" />
+                <ScalarProperty Name="odetc" ColumnName="odetc" />
+                <ScalarProperty Name="odetarih" ColumnName="odetarih" />
+                <ScalarProperty Name="odesez" ColumnName="odesez" />
+                <ScalarProperty Name="odemak" ColumnName="odemak" />
+                <ScalarProperty Name="odetutar" ColumnName="odetutar" />
+                <ScalarProperty Name="odemik" ColumnName="odemik" />
+                <ScalarProperty Name="odekalan" ColumnName="odekalan" />
+                <ScalarProperty Name="odetur" ColumnName="odetur" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PompaTbl">
+            <EntityTypeMapping TypeName="SULAMADBModel.PompaTbl">
+              <MappingFragment StoreEntitySet="PompaTbl">
+                <ScalarProperty Name="pompanu" ColumnName="pompanu" />
+                <ScalarProperty Name="pompais" ColumnName="pompais" />
+                <ScalarProperty Name="pompauc" ColumnName="pompauc" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SuTbl">
+            <EntityTypeMapping TypeName="SULAMADBModel.SuTbl">
+              <MappingFragment StoreEntitySet="SuTbl">
+                <ScalarProperty Name="uyesu" ColumnName="uyesu" />
+                <ScalarProperty Name="tcsu" ColumnName="tcsu" />
+                <ScalarProperty Name="adsu" ColumnName="adsu" />
+                <ScalarProperty Name="fisu" ColumnName="fisu" />
+                <ScalarProperty Name="actarihsu" ColumnName="actarihsu" />
+                <ScalarProperty Name="kapatarihsu" ColumnName="kapatarihsu" />
+                <ScalarProperty Name="sumevki" ColumnName="sumevki" />
+                <ScalarProperty Name="susez" ColumnName="susez" />
+                <ScalarProperty Name="sugor" ColumnName="sugor" />
+                <ScalarProperty Name="suucret" ColumnName="suucret" />
+                <ScalarProperty Name="toplamsaat" ColumnName="toplamsaat" />
+                <ScalarProperty Name="sutoplam" ColumnName="sutoplam" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

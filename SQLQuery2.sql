@@ -1,0 +1,1 @@
+﻿select odeuye, max(odekalan) as odekalan from OdeTbl group by odeuye
